@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .noto-serif-font {
@@ -6,4 +5,82 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+
+  .navbar {
+    max-width: 1140px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+
+
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #000;
+  }
+  .cart-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 576px) {
+      .nav-links {
+        display: none;
+      }
+
+      .navbar {
+        justify-content: space-between;
+      }
+}
+
+
+/* medium size device */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .nav-links {
+        display: none;
+      }
+
+      .navbar {
+        justify-content: space-between;
+      }
+}
