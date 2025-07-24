@@ -115,6 +115,141 @@ nav {
   }
 
 
+  /* plants section styles */
+  .plants-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    /* color: #2e7d32; */
+  }
+  .header h1 .plants{
+    color: #E95A08;
+  }
+  
+  .header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .plant-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Each flower item */
+  .plant-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .plant-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plant-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .plant-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .plant-price {
+    color: #888;
+    margin: 8px 0;
+  }
+  
+  .add-btn {
+    background-color: #E95A08;
+    color: white;
+    padding: 10px 66px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #1b5e20;
+  }
+
+
+  /* Base styles */
+/* .plants-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.plants-section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plants-section .header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.plants-section .header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plant-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+
+.plant-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.plant-gallery img:hover {
+  transform: scale(1.05);
+} */
+
+
 
 
 /* Responsive Styles */
