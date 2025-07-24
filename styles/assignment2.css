@@ -201,6 +201,51 @@ nav {
     background-color: #1b5e20;
   }
 
+
+  /* flower store styles start */
+  .flower-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  .flower-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .image-container {
+    position: relative;
+    margin-right: 50px;
+  }
+  .flower-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .trusted-badge {
+    position: absolute;
+    top: -48px;
+    right: -48px;
+    width: 130px;
+    height: auto;
+  }
+  .text-container {
+    flex: 1;
+  }
+  .text-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .text-container li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+
 /* Responsive Styles */
 
 @media screen and (max-width: 576px) {
@@ -236,6 +281,25 @@ nav {
       .plant-gallery {
         grid-template-columns: repeat(1, 1fr);
       }
+
+      /* flower store responsive styles */
+      .flower-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .flower-image {
+        width: 100%;
+        max-width: 300px;
+      }
+      .trusted-badge {
+        position: static;
+        display: block;
+        margin: 10px auto;
+      }
 }
 
 
@@ -270,5 +334,14 @@ nav {
       /* plants section responsive styles */
       .plant-gallery {
         grid-template-columns: repeat(2, 1fr);
+      }
+      /* flower store responsive styles */
+      .flower-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .flower-image {
+        width: 100%;
+        height: auto;
       }
 }
