@@ -201,57 +201,6 @@ nav {
     background-color: #1b5e20;
   }
 
-
-  /* Base styles */
-/* .plants-section {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-}
-
-.plants-section .container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.plants-section .header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #2e7d32;
-}
-
-.plants-section .header p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 40px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.plant-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  justify-content: center;
-}
-
-.plant-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.plant-gallery img:hover {
-  transform: scale(1.05);
-} */
-
-
-
-
 /* Responsive Styles */
 
 @media screen and (max-width: 576px) {
@@ -281,6 +230,12 @@ nav {
       /* .hero-image img {
         max-height: 160px;
       } */
+
+      /* plants section responsive */
+
+      .plant-gallery {
+        grid-template-columns: repeat(1, 1fr);
+      }
 }
 
 
@@ -311,5 +266,9 @@ nav {
       .banner h2 {
         font-size: 2rem;
         margin-top: 65px;
+      }
+      /* plants section responsive styles */
+      .plant-gallery {
+        grid-template-columns: repeat(2, 1fr);
       }
 }
