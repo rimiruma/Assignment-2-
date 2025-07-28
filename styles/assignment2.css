@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* navbar styles start */
 nav {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -35,8 +35,6 @@ nav {
     display: flex;
     gap: 25px;
   }
-
-
 
   .nav-links a {
     text-decoration: none;
@@ -113,8 +111,6 @@ nav {
     box-shadow: 0 0 0 2px #e0e6ed;
     background: #fff;
   }
-
-
   /* plants section styles */
   .plants-section {
     padding: 60px 20px;
@@ -151,7 +147,6 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
-  
   /* Each flower item */
   .plant-card {
     background-color: #fff;
@@ -199,8 +194,6 @@ nav {
   .add-btn:hover {
     background-color: #1b5e20;
   }
-
-
   /* flower store styles start */
   .flower-section {
     background-color: #f9f9f9;
@@ -345,7 +338,7 @@ nav {
   color: white;
 }
 .newsletter-overlay {
-  background-color: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+  /* background-color: rgba(0, 0, 0, 0.4); */
   padding: 40px 20px;
   max-width: 600px;
   margin: 0 auto;
@@ -358,15 +351,15 @@ nav {
 }
 .newsletter-form {
   display: flex;
-  gap: 10px;
+  /* gap: 10px; */
   flex-wrap: wrap;
   justify-content: center;
 }
 .newsletter-form input[type="email"] {
   padding: 12px 15px;
   border: none;
-  border-radius: 6px;
-  flex: 1 1 250px;
+  /* border-radius: 6px; */
+  flex:1 1 250px;
   font-size: 1rem;
 }
 .newsletter-form button {
@@ -375,7 +368,7 @@ nav {
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
-  border-radius: 6px;
+  /* border-radius: 6px; */
   cursor: pointer;
 }
 .newsletter-form button:hover {
@@ -489,7 +482,10 @@ nav {
       /* plants section responsive */
 
       .plant-gallery {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .add-btn {
+        padding: 10px 10px;
       }
 
       /* flower store responsive styles */
@@ -506,9 +502,7 @@ nav {
         max-width: 300px;
       }
       .trusted-badge {
-        position: static;
-        display: block;
-        margin: 10px auto;
+        display: none;
       }
 
       /* deals responsive styles */
@@ -523,9 +517,14 @@ nav {
       .newsletter-overlay h2 {
         font-size: 1.5rem;
       }
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+      }
       .newsletter-form button {
         width: 100%;
       }
+
       /* footer responsive styles */
       .footer-container {
         flex-direction: column;
@@ -600,6 +599,10 @@ nav {
       /* join responsive styles */
       .newsletter-overlay h2 {
         font-size: 1.5rem;
+      }
+      .newsletter-form {
+        /* display: flex; */
+        gap: 10px;
       }
       .newsletter-form button {
         width: 100%;
